@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매장 상세보기 | 굿즈로드</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-$END$
+<header>
+    <a href="index.html" class="back-btn">← 메인으로</a>
+    <h1 id="store-name">라인프렌즈 명동점</h1>
+</header>
+
+<main>
+    <section id="store-info">
+        <h2>매장 정보</h2>
+        <p>주소: 서울특별시 중구 명동길 21</p>
+        <p>운영시간: 10:00 ~ 22:00</p>
+        <p>연락처: 02-123-4567</p>
+    </section>
+
+    <section id="inventory-search">
+        <h2>재고 검색</h2>
+        <input type="text" id="search-input" placeholder="상품명 또는 태그로 검색">
+        <button id="search-btn">검색</button>
+
+        <ul id="search-results">
+            <!-- 예시 결과 -->
+            <li>
+                <img src="images/sample1.jpg" alt="상품 이미지" width="60">
+                <div>
+                    <h3>브라운 인형</h3>
+                    <p>가격: 25,000원</p>
+                    <p>SKU: BRN-001</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/sample2.jpg" alt="상품 이미지" width="60">
+                <div>
+                    <h3>초코 키링</h3>
+                    <p>가격: 12,000원</p>
+                    <p>SKU: CHO-004</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 GoodsRoad. All rights reserved.</p>
+</footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
