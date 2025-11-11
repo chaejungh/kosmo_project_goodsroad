@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>굿즈로드 | Goods Road</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <!-- ✅ 카카오맵 SDK (services 포함 필수) -->
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b7be356d0f859ea31847dbccc372d8d7&libraries=services"></script>
+</head>
+
+<body>
+<header>
+    <div class="brand">🎯 굿즈로드 | Goods Road</div>
+</header>
+
+<main>
+    <div id="map"></div>
+
+    <aside id="shopList">
+        <div class="search-box">
+            <input id="searchInput" type="text" placeholder="매장명 검색 (예: 피규어, 애니)"/>
+            <button id="searchBtn" class="btn primary">검색</button>
+            <button id="allBtn" class="btn">전체</button>
+        </div>
+        <h3>매장 목록</h3>
+        <div id="shops"></div>
+
+    </aside>
+</main>
+
+<!-- ✅ 지도 로드 및 매장 표시 스크립트 -->
+<script type="module" src="./index.js"></script>
+</body>
+</html>
